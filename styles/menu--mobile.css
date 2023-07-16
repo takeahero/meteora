@@ -1,0 +1,70 @@
+.hamburger {
+    background: transparent;
+    cursor: pointer;
+    position: absolute;
+    right: 1rem;
+    top: 1.8125rem;
+    z-index: 100;
+}
+
+.close-icon {
+    display: none;
+}
+
+.menu__list--mobile {
+    align-items: center;
+    background: var(--dark-gray);
+    color: var(--gray);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    list-style: none;
+    position: absolute;
+    top: -1rem;
+    right: 0;
+    transform: translateY(-200%);
+    transition: transform 1s;
+    z-index: 99;
+    width: 70vw;
+    height: 70vh;
+}
+
+.menu__item--mobile {
+    color: var(--gray);
+    font-weight: var(--regular);
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.menu__list--mobile hr {
+    border-width: 1px;
+    border-style: solid;
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 50%;
+    width: 50%;
+}
+
+.menu__item--mobile.active {
+        color: var(--green)
+}
+
+.show-menu {
+    transform: translateY(0);
+}
+
+.menu-icon.material-symbols-outlined {
+    color: var(--green);
+}
+
+.close-icon.material-symbols-outlined {
+    color: var(--green);
+}
+
+.menu--tablet {
+    display: none;
+}

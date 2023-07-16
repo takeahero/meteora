@@ -1,0 +1,30 @@
+* {
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+html,
+body {
+    background: #202020;
+}
+
+:root {
+    --gray: #CCCCCC;
+    --dark-gray: #343A40;
+    --green: #DAFF01;
+    --purpple: #9353FF;
+    --black: #000000;
+    --coral: #EE6471;
+    --orange: #F87F46;
+
+    --light: 300;
+    --regular: 400;
+    --semi-bold: 500;
+    --bold: 700;
+
+} 

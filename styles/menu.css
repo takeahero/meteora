@@ -1,0 +1,32 @@
+@media screen and (min-width: 768px) {
+    .menu--mobile {
+        display: none;
+    }
+
+    .menu--tablet {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 26.84777rem;
+    }
+
+    .menu--tablet img {
+        margin-right: 1rem;
+    }
+
+    .menu__list--tablet {
+        display: flex;
+        gap: 1.25rem;
+
+    }
+
+    .menu__item--tablet {
+        color: var(--gray);
+        font-weight: var(--regular);
+        font-size: .8125rem;
+    }
+
+    .menu__item--tablet.active {
+        color: var(--green);
+    }
+}

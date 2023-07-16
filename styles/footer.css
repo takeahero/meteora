@@ -1,0 +1,11 @@
+ .footer {
+   padding: 2rem 0;
+ }
+
+ .footer__content {
+   color: var(--gray);
+   font-size: .8125rem;
+   width: 70vw;
+   margin: 0 auto;
+   text-align: center;
+}

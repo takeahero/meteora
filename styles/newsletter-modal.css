@@ -1,0 +1,49 @@
+.newsletter-modal__container {
+  width: 90vw;
+  margin: auto;
+}
+
+.newsletter-modal__container::backdrop {
+  background: rgba(0, 0, 0, .5);
+}
+
+.newsletter-modal__header {
+  flex-direction: row;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background-color: black;
+}
+
+.newsletter-modal__check-icon {
+  color: var(--green);
+  width: 2rem;
+  font-size: 2rem;
+}
+
+.newsletter-modal__title {
+  width: 85%;
+  margin: 0 1.25rem;
+  font-size: 1.25rem;
+  font-weight: var(--semi-bold);
+  color: var(--gray);
+}
+
+.newsletter-modal__close-btn {
+  background-color: transparent;
+}
+
+.newsletter-modal__close-icon {
+  width: 1rem;
+  font-size: 1rem;
+  color: var(--gray);
+}
+
+.newsletter-modal__body {
+  margin: 0 auto;
+  font-size: 1rem;
+  width: 88%;
+  padding: 1rem;
+}
