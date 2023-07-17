@@ -44,6 +44,7 @@
 .featured__card--btn {
     padding: .5rem 1rem;
     background-color: var(--purpple);
+    color: var(--gray);
 }
 
 .featured__card--title,
