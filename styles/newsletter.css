@@ -35,6 +35,7 @@
     border: 1px solid var(--dark-gray);
     background: transparent;
     color: var(--dark-gray);
+    outline: none;
 }
 
 .newsletter__input:focus {
