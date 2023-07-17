@@ -36,6 +36,7 @@
     background: transparent;
     color: var(--dark-gray);
     outline: none;
+    border-radius: 0;
 }
 
 .newsletter__input:focus {

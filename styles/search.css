@@ -16,6 +16,7 @@
     background: transparent;
     color: var(--gray);
     outline: none;
+    border-radius: 0;
 }
 
 .search__input:focus {
