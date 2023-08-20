@@ -1,5 +1,5 @@
 import { productsCard } from "./productCard.js"
-import { showcase } from "./showcase.js"
+import { showcase } from "../api/showcase.js"
 import { showProducts } from "./productCard.js"
 
 const categoryCards = document.querySelectorAll('.category__card');

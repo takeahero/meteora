@@ -1,4 +1,4 @@
-import { showcase } from "./showcase.js";
+import { showcase } from "../api/showcase.js";
 import { showProductModal } from "./productModal.js";
 
 const productsArr = document.querySelector('[data-products-ul]')
