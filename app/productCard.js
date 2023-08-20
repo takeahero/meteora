@@ -3,7 +3,7 @@ import { showProductModal } from "./productModal.js";
 
 const productsArr = document.querySelector('[data-products-ul]')
 
-export function productsCard(imgDesktop, imgTablet, imgMobile, title, description, price) {
+export function productsCard(imgDesktop, imgTablet, imgMobile, title, description, price, supplier) {
     const productsItem = document.createElement("li")
     productsItem.className = "products__item"
     productsItem.innerHTML += `
@@ -22,16 +22,16 @@ export function productsCard(imgDesktop, imgTablet, imgMobile, title, descriptio
 `
     const productDetailBtn = productsItem.querySelector(".featured__card--btn");
     productDetailBtn.addEventListener("click", () => {
-        showProductModal({ imgDesktop, imgTablet, imgMobile, title, description, price });
+        showProductModal({ imgDesktop, imgTablet, imgMobile, title, description, price, supplier});
     });
 
     return productsItem
 }
 
-async function showProducts() {
+export async function showProducts() {
     try {
         const showcaseRequest = await showcase();
-        showcaseRequest.forEach(product => productsArr.appendChild(productsCard(product.imgDesktop, product.imgTablet, product.imgMobile, product.title, product.description, product.price)))
+        showcaseRequest.forEach(product => productsArr.appendChild(productsCard(product.imgDesktop, product.imgTablet, product.imgMobile, product.title, product.description, product.price, product.supplier, product.size)))
     }
     catch (e) {
         alert("error")

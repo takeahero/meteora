@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="./styles/facility.css">
     <link rel="stylesheet" href="./styles/newsletter.css">
     <link rel="stylesheet" href="./styles/newsletter-modal.css">
+    <link rel="stylesheet" href="./styles/product-modal.css">
     <link rel="stylesheet" href="./styles/footer.css">
     <meta name="description" content="Sua loja online. Compre com os melhores preços, aqui!">
     <meta property="og:title" content="Meteora" />
@@ -65,10 +66,13 @@
             </ul>
         </nav>
 
-        <div class="search">
-            <input class="search__input" type="search" placeholder="Digite o produto">
-            <button class="search__btn" type="submit">Buscar</button>
-        </div>
+        <form class="search" role="search" action="/search" method="get">
+            <label for="search-input" class="visually-hidden">Digite o produto</label>
+            <input class="search__input" type="search" id="search-input" name="search-input" placeholder="Digite o produto" />
+            <button type="submit" class="search__btn">
+              <span>Buscar</span>
+            </button>
+          </form>
     </header>
 
     <div class="swiper">
@@ -121,28 +125,28 @@
 
     <p class="category__title">Busque por categoria</p>
     <div class="category">
-        <div class="category__card" data-category>
+        <div class="category__card">
             <img src="./assets/Mobile/Categorias/Categoria camiseta.png" alt="Foto de uma camiseta verde">
             <p class="category__card--title">Camisetas</p>
         </div>
-        <div class="category__card" data-category>
+        <div class="category__card">
             <img src="./assets/Mobile/Categorias/Categoria Bolsas.png" alt="Foto de uma bolsa de couro marrom">
             <p class="category__card--title">Bolsas</p>
         </div>
-        <div class="category__card" data-category>
+        <div class="category__card">
             <img src="./assets/Mobile/Categorias/Categoria calçados.png"
                 alt="Foto de um par de tênis com detalhes coloridos">
             <p class="category__card--title">Calçados</p>
         </div>
-        <div class="category__card" data-category>
+        <div class="category__card">
             <img src="./assets/Mobile/Categorias/Categoria calças.png" alt="Foto de uma pilha de calças jeans">
             <p class="category__card--title">Calças</p>
         </div>
-        <div class="category__card" data-category>
+        <div class="category__card">
             <img src="./assets/Mobile/Categorias/Categoria Casacos.png" alt="Foto de uma jaqueta marrom">
             <p class="category__card--title">Casacos</p>
         </div>
-        <div class="category__card" data-category>
+        <div class="category__card">
             <img src="./assets/Mobile/Categorias/Categoria óculos.png" alt="Foto de um óculos de sol">
             <p class="category__card--title">Óculos</p>
         </div>
@@ -233,55 +237,63 @@
 
     <!-- product modal start -->
     <dialog id="productModal" class="product-modal__container">
-        <div class="product__modal--header">
+        
+        <div class="product-modal__header">
+            <p class="product-modal__header--title">Detalhes do produto</p>
             <button type="button" class="product-modal__close-btn">
                 <span class="product-modal__close-icon material-symbols-outlined">
                     close
                 </span>
             </button>
-            <div class="product__modal--body">
-                <div class="product__img--container">
-                    <img src="" id="productModalImg" alt="">
-                </div>
-                <p id="productModalTitle" class="product__modal--title"></p>
-                <p id="productModalDescription" class="product__modal--description"></p>
-                <p id="productModalPrice" class="product__modal--price"></p>
-                <p id="productModalSupplier" class="product__modal--supplier"></p>
+        </div>
 
-                <div class="colors-container">
-                    <div class="colors-item">
-                        <input type="radio" id="blue" name="color" value="blue"/>
-                        <label for="blue">Azul</label>
-                    </div>
-                    <div class="colors-item">
-                        <input type="radio" id="white" name="color" value="white"/>
-                        <label for="white">Branco</label>
-                    </div>
-                    <div class="colors-item">
-                        <input type="radio" id="black" name="color" value="black"/>
-                        <label for="black">Preto</label>
-                    </div>
-                </div>
-
-                <div class="size-container">
-                    <div class="size-item">
-                        <input type="radio" id="smallSize" name="size" value="smallSize"/>
-                        <label for="smallSize">P</label>
-                    </div>
-                    <div class="size-item">
-                        <input type="radio" id="mediumSize" name="size" value="mediumSize"/>
-                        <label for="mediumSize">M</label>
-                    </div>
-                    <div class="size-item">
-                        <input type="radio" id="largeSize" name="size" value="largeSize"/>
-                        <label for="largeSize">L</label>
-                    </div>
-                </div>
-
-                <div class="cart__btn--container">
-                    <button type="button">Adicionar ao carrinho</button>
-                </div>
+        <div class="product__modal--body">
+            <div class="product__img--container">
+                <img src="" id="productModalImg" alt="">
             </div>
+            <p id="productModalTitle" class="product__modal--title"></p>
+            <p id="productModalDescription" class="product__modal--description"></p>
+            <p id="productModalPrice" class="product__modal--price"></p>
+            <p id="productModalSupplier" class="product__modal--supplier"></p>
+
+            <form class="colors-container">
+                <div class="colors-item">
+                    <input type="radio" id="color1" name="color" value="color1" />
+                    <label for="color1"></label>
+                </div>
+                <div class="colors-item">
+                    <input type="radio" id="color2" name="color" value="color2" />
+                    <label for="color2"></label>
+                </div>
+                <div class="colors-item">
+                    <input type="radio" id="color3" name="color" value="color3" />
+                    <label for="color3"></label>
+                </div>
+            </form>
+
+            <form class="size-container">
+                <div class="size-item">
+                    <input type="radio" id="size1" name="size" value="size1" >
+                    <label for="size1"></label>
+                </div>
+                <div class="size-item">
+                    <input type="radio" id="size2" name="size" value="size2" />
+                    <label for="size2"></label>
+                </div>
+                <div class="size-item">
+                    <input type="radio" id="size3" name="size" value="size3" />
+                    <label for="size3"></label>
+                </div>
+                <div class="size-item">
+                    <input type="radio" id="size4" name="size" value="size4" />
+                    <label for="size4"></label>
+                </div>
+            </form>
+
+            <div class="cart__btn--container">
+                <button type="button">Adicionar ao carrinho</button>
+            </div>
+        </div>
     </dialog>
     <!-- product modal end -->
 
@@ -293,6 +305,8 @@
     <script type="module" src="./app/productCard.js"></script>
     <script type="module" src="./app/showcase.js"></script>
     <script type="module" src="./app/productModal.js"></script>
+    <script type="module" src="./app/filterProducts.js"></script>
+    <script type="module" src="./app/search.js"></script>
 </body>
 
 </html>

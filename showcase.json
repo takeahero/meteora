@@ -7,12 +7,14 @@
     "description": "Bolsa camel em couro sintético de alta duração. Ideal para acompanhar você por uma vida!",
     "price": "R$120,00",
     "supplier": "Vendido e entregue pela Meteora",
-    "colorBlue": "Blue",
-    "colorWhite": "White",
-    "colorBlack": "Black", 
-    "sizeS": "S",
-    "sizeM": "M",
-    "sizesL": "L"
+    "color": {
+        "cor1": "Marrom",
+        "cor2": "Preta",
+        "cor3": "Vermelha"
+    },
+    "size": {
+        "size1": "Tamanho único"
+    }
 },
 
 {
@@ -24,12 +26,16 @@
     "description": "Modelo Wide Leg alfaiataria em linho. Uma peça pra vida toda!",
     "price": "R$250,00",
     "supplier": "Vendido e entregue pela Alura Moda",
-    "colorBlue": "Blue",
-    "colorWhite": "White",
-    "colorBlack": "Black", 
-    "sizeS": "S",
-    "sizeM": "M",
-    "sizesL": "L"
+    "color": {
+        "cor1": "Bege",
+        "cor2": "Branca",
+        "cor3": "Preta"
+    },
+    "size": {
+        "size1": "P",
+        "size2": "M",
+        "size3": "G"
+    }
 },
 
 {
@@ -41,12 +47,16 @@
     "description": "Multicores e tamanhos. Tecido de algodão 100%, fresquinho para o verão. Modelagem unissex.",
     "price": "R$70,00",
     "supplier": "Vendido e entregue pela Lojaaaa",
-    "colorBlue": "Blue",
-    "colorWhite": "White",
-    "colorBlack": "Black", 
-    "sizeS": "S",
-    "sizeM": "M",
-    "sizesL": "L"
+    "color": {
+        "cor1": "Mostarda",
+        "cor2": "Branca",
+        "cor3": "Azul"
+    },
+    "size": {
+        "size1": "P",
+        "size2": "M",
+        "size3": "G"
+    }
 },
 
 {
@@ -58,12 +68,16 @@
     "description": "Modelo unissex oversized com gola de camurça. Atemporal e autêntica!",
     "price": "R$70,00",
     "supplier": "Vendido e entregue pela Riachuelo",
-    "colorBlue": "Blue",
-    "colorWhite": "White",
-    "colorBlack": "Black", 
-    "sizeS": "S",
-    "sizeM": "M",
-    "sizesL": "L"
+    "color": {
+        "cor1": "Azul clássico",
+        "cor2": "Branco",
+        "cor3": "Cinza"
+    },
+    "size": {
+        "size1": "P",
+        "size2": "M",
+        "size3": "G"
+    }
 },
 
 {
@@ -75,12 +89,14 @@
     "description": "Armação metálica em grafite com lentes arredondadas. Sem erro!",
     "price": "R$120,00",
     "supplier": "Vendido e entregue pela Chilli Beans",
-    "colorBlue": "Blue",
-    "colorWhite": "White",
-    "colorBlack": "Black", 
-    "sizeS": "S",
-    "sizeM": "M",
-    "sizesL": "L"
+    "color": {
+        "cor1": "Preto",
+        "cor2": "Metálico",
+        "cor3": "Dourado"
+    },
+    "size": {
+        "size1": "Tamanho único"
+    }
 },
 
 {
@@ -92,10 +108,15 @@
     "description": "Snicker casual com solado mais alto e modelagem robusta. Modelo unissex.",
     "price": "R$180,00",
     "supplier": "Vendido e entregue pela Adidas",
-    "colorBlue": "Blue",
-    "colorWhite": "White",
-    "colorBlack": "Black", 
-    "sizeS": "S",
-    "sizeM": "M",
-    "sizesL": "L"
+    "color": {
+        "cor1": "Branco",
+        "cor2": "Preto",
+        "cor3": "Amarelo"
+    },
+    "size": {
+        "size1": "37",
+        "size2": "38",
+        "size3": "39",
+        "size4": "40"
+    }
 }]
