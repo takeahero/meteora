@@ -1,6 +1,6 @@
 export async function showcase() {
 	try {
-		const showcaseAccess = await fetch("https://meteora-json-server-tasks.vercel.app/")
+		const showcaseAccess = await fetch("../db.json")
 		let product = await showcaseAccess.json()
 		return product;
 	}
