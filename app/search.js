@@ -1,5 +1,5 @@
 import { displayProducts } from "./filterProducts.js";
-import { showcase } from "./showcase.js"
+import { showcase } from "../api/showcase.js"
 
 document.addEventListener('DOMContentLoaded', function () {
     const searchForm = document.querySelector('.search');
