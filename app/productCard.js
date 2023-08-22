@@ -1,4 +1,4 @@
-import { apiConnect } from "../showcase.js"
+import { showcase } from "../showcase.js"
 import { showProductModal } from "./productModal.js";
 
 const productsArr = document.querySelector('[data-products-ul]')
@@ -30,7 +30,7 @@ export function productsCard(imgDesktop, imgTablet, imgMobile, title, descriptio
 
 export async function showProducts() {
     try {
-        const showcaseRequest = await apiConnect();
+        const showcaseRequest = await showcase();
         showcaseRequest.forEach(product => productsArr.appendChild(productsCard(product.imgDesktop, product.imgTablet, product.imgMobile, product.title, product.description, product.price, product.supplier, product.size)))
     }
     catch (e) {

@@ -1,5 +1,5 @@
 import { displayProducts } from "./filterProducts.js";
-import { apiConnect } from "../showcase.js"
+import { showcase } from "../showcase.js"
 
 document.addEventListener('DOMContentLoaded', function () {
     const searchForm = document.querySelector('.search');
@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
     function performSearch() {
         const searchTerm = searchInput.value.trim().toLowerCase();
 
-        apiConnect().then(products => {
+        showcase().then(products => {
             const filteredProducts = products.filter(product =>
                 product.title.toLowerCase().includes(searchTerm) ||
                 product.description.toLowerCase().includes(searchTerm) ||
