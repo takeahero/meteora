@@ -1,5 +1,5 @@
 import { productsCard } from "./productCard.js"
-import { showcase } from "../showcase.js"
+import { apiConnect } from "../showcase.js"
 import { showProducts } from "./productCard.js"
 
 const categoryCards = document.querySelectorAll('.category__card');
@@ -31,7 +31,7 @@ categoryCards.forEach(card => {
     card.addEventListener('click', () => {
         const selectedCategory = card.querySelector('.category__card--title').textContent;
 
-        showcase().then(products => {
+        apiConnect().then(products => {
             const filteredProducts = products.filter(product => product.category === selectedCategory);
             displayProducts(filteredProducts);
         });
