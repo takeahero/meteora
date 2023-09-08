@@ -1,8 +1,8 @@
 [{
     "category": "Bolsas",
-    "imgMobile": "assets/mobile/imagensCards/bolsaMobile.png",
-    "imgTablet": "assets/tablet/imagensCards/bolsaTablet.png",
-    "imgDesktop": "assets/desktop/imagensCards/bolsaDesktop.png",
+    "imgMobile": "img/mobile/imagensCards/bolsaMobile.png",
+    "imgTablet": "img/tablet/imagensCards/bolsaTablet.png",
+    "imgDesktop": "img/desktop/imagensCards/bolsaDesktop.png",
     "title": "Bolsa coringa",
     "description": "Bolsa camel em couro sintético de alta duração. Ideal para acompanhar você por uma vida!",
     "price": "R$120,00",
@@ -19,9 +19,9 @@
 
 {
     "category": "Calças",
-    "imgMobile": "assets/mobile/imagensCards/calcaMobile.png",
-    "imgTablet": "assets/tablet/imagensCards/calcaTablet.png",
-    "imgDesktop": "assets/desktop/imagensCards/calcaDesktop.png",
+    "imgMobile": "img/mobile/imagensCards/calcaMobile.png",
+    "imgTablet": "img/tablet/imagensCards/calcaTablet.png",
+    "imgDesktop": "img/desktop/imagensCards/calcaDesktop.png",
     "title": "Calça Alfaiataria",
     "description": "Modelo Wide Leg alfaiataria em linho. Uma peça pra vida toda!",
     "price": "R$250,00",
@@ -40,9 +40,9 @@
 
 {
     "category": "Camisetas",
-    "imgMobile": "assets/mobile/imagensCards/camisetaMobile.png",
-    "imgTablet": "assets/tablet/imagensCards/camisetaTablet.png",
-    "imgDesktop": "assets/desktop/imagensCards/camisetaDesktop.png",
+    "imgMobile": "img/mobile/imagensCards/camisetaMobile.png",
+    "imgTablet": "img/tablet/imagensCards/camisetaTablet.png",
+    "imgDesktop": "img/desktop/imagensCards/camisetaDesktop.png",
     "title": "Camiseta conforto",
     "description": "Multicores e tamanhos. Tecido de algodão 100%, fresquinho para o verão. Modelagem unissex.",
     "price": "R$70,00",
@@ -61,9 +61,9 @@
 
 {
     "category": "Casacos",
-    "imgMobile": "assets/mobile/imagensCards/jaquetaMobile.png",
-    "imgTablet": "assets/tablet/imagensCards/jaquetaTablet.png",
-    "imgDesktop": "assets/desktop/imagensCards/jaquetaDesktop.png",
+    "imgMobile": "img/mobile/imagensCards/jaquetaMobile.png",
+    "imgTablet": "img/tablet/imagensCards/jaquetaTablet.png",
+    "imgDesktop": "img/desktop/imagensCards/jaquetaDesktop.png",
     "title": "Jaqueta Jeans",
     "description": "Modelo unissex oversized com gola de camurça. Atemporal e autêntica!",
     "price": "R$70,00",
@@ -82,9 +82,9 @@
 
 {
     "category": "Óculos",
-    "imgMobile": "assets/mobile/imagensCards/oculosMobile.png",
-    "imgTablet": "assets/tablet/imagensCards/oculosTablet.png",
-    "imgDesktop": "assets/desktop/imagensCards/oculosDesktop.png",
+    "imgMobile": "img/mobile/imagensCards/oculosMobile.png",
+    "imgTablet": "img/tablet/imagensCards/oculosTablet.png",
+    "imgDesktop": "img/desktop/imagensCards/oculosDesktop.png",
     "title": "Óculos redondo",
     "description": "Armação metálica em grafite com lentes arredondadas. Sem erro!",
     "price": "R$120,00",
@@ -101,9 +101,9 @@
 
 {
     "category": "Calçados",
-    "imgMobile": "assets/mobile/imagensCards/tenisMobile.png",
-    "imgTablet": "assets/tablet/imagensCards/tenisTablet.png",
-    "imgDesktop": "assets/desktop/imagensCards/tenisDesktop.png",
+    "imgMobile": "img/mobile/imagensCards/tenisMobile.png",
+    "imgTablet": "img/tablet/imagensCards/tenisTablet.png",
+    "imgDesktop": "img/desktop/imagensCards/tenisDesktop.png",
     "title": "Tênis Chunky",
     "description": "Snicker casual com solado mais alto e modelagem robusta. Modelo unissex.",
     "price": "R$180,00",
