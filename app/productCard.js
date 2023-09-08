@@ -37,5 +37,3 @@ export async function showProducts() {
         alert("error")
     }
 }
-
-showProducts()
